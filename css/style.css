@@ -500,6 +500,36 @@ input[type="button"],
 					font-size: 1em;
 				}
 
+	/* Box */
+
+	.box.highlight {
+		text-align: center;
+	}
+
+	.box.post {
+		position: relative;
+		margin: 0 0 2em 0;
+	}
+
+		.box.post:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.box.post .inner {
+			margin-left: calc(30% + 2em);
+		}
+
+			.box.post .inner > :last-child {
+				margin-bottom: 0;
+			}
+
+		.box.post .image {
+			width: 30%;
+			margin: 0;
+		}
+
 /*********************************************************************************/
 /* Icons                                                                         */
 /*********************************************************************************/
@@ -728,11 +758,20 @@ input[type="button"],
 			background-image: url('images/overlay.png');
 		}
 
-			#main > section.dark
-			{
-				color: #ddd;
-				color: rgba(255,255,255,0.85);
-			}
+		#main > section ul
+		{
+			list-style-type: circle;
+		}
+		#main > section li
+		{
+			margin-left: 2.5em;
+		}
+
+		#main > section.dark
+		{
+			color: #ddd;
+			color: rgba(255,255,255,0.85);
+		}
 
 				#main > section.dark h2,
 				#main > section.dark h3,
@@ -781,15 +820,21 @@ input[type="button"],
 				text-align: left
 			}
 
-			#main > section.three ul
+			#main > section.three h3
 			{
-				list-style-type: circle;
-			}
-			#main > section.three li
+				font-size: 1.2em
+			}			
+
+
+			#main > section.three-point-three
 			{
-				margin-left: 2.5em;
+				text-align: left
 			}
-		
+			
+			#main > section.three-and-two-thirds
+			{
+				text-align: left
+			}		
 			#main > section.four
 			{
 				background-color: #e8edec;
